@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 export default function HomeCareSection() {
   return (
     <section className="py-20 px-40 bg-aire-white">
-      <div className="container mx-auto grid lg:grid-cols-2 gap-12 i tems-center">
+      <div className="container mx-auto grid lg:grid-cols-2 gap-12 max-w-[1000px] tems-center">
         <div className="relative">
           <Image
             src="/monitor.jpg"

@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function AboutSection() {
   return (
     <section className="py-20 px-40 bg-aire-pink">
-      <div className="container mx-auto grid lg:grid-cols-2 gap-12 i tems-center">
+      <div className="container mx-auto grid lg:grid-cols-2 gap-12 max-w-[1000px] tems-center">
         <div className="relative">
           <Image
             src="/menino.jpg"

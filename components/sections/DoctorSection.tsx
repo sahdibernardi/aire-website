@@ -15,7 +15,7 @@ export default function DoctorSection() {
       </div>
       
       <div className="py-20 flex flex-col justify-center items-center relative z-10 w-full text-aire-purple">
-        <div className="flex justify-center items-start relative z-10 w-full max-w-6xl px-6">
+        <div className="flex justify-center items-start relative z-10 w-full max-w-5xl px-6">
           {/* Lado esquerdo - Conteúdo de texto */}
           <div className="space-y-8 w-1/2 pr-8">
             <h2 className="text-3xl lg:text-4xl font-bold leading-tight">
@@ -49,7 +49,7 @@ export default function DoctorSection() {
           </div>
         </div>
         
-        <div className="mt-10 flex flex-col justify-center items-start relative z-10 w-full max-w-6xl px-6">
+        <div className="mt-10 flex flex-col justify-center items-start relative z-10 w-full max-w-5xl px-6">
           <p className="leading-relaxed">
             Nos últimos anos, já no Brasil, realizei milhares de atendimentos em fisioterapia cardiopulmonar,
             acompanhando adultos e crianças em diferentes fases de suas jornadas de reabilitação. Com mais de 10
