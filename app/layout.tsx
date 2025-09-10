@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,6 +11,60 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+// Configuração das fontes personalizadas
+const calistoga = localFont({
+  src: "../public/fonts/Calistoga/Calistoga-Regular.ttf",
+  variable: "--font-calistoga",
+  display: "swap",
+});
+
+const sora = localFont({
+  src: [
+    {
+      path: "../public/fonts/Sora/Sora-Thin.ttf",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Sora/Sora-ExtraLight.ttf",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Sora/Sora-Light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Sora/Sora-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Sora/Sora-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Sora/Sora-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Sora/Sora-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Sora/Sora-ExtraBold.ttf",
+      weight: "800",
+      style: "normal",
+    },
+  ],
+  variable: "--font-sora",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +80,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${calistoga.variable} ${sora.variable} antialiased`}
       >
         {children}
       </body>

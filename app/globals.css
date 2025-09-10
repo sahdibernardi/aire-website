@@ -3,6 +3,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* AIRE Brand Colors */
+  --aire-black: #000000;
+  --aire-slate: #60757A;
+  --aire-purple: #77355B;
+  --aire-blue: #81A3AA;
+  --aire-pink: #A06088;
+  --aire-light-blue: #AEC6CC;
+  --aire-beige: #DBBBA9;
+  --aire-white: #FBFBFB;
+  --aire-cream: #FCE9E0;
 }
 
 @theme inline {
@@ -10,17 +21,61 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-calistoga: var(--font-calistoga);
+  --font-sora: var(--font-sora);
+  
+  /* AIRE Brand Colors */
+  --color-aire-black: var(--aire-black);
+  --color-aire-slate: var(--aire-slate);
+  --color-aire-purple: var(--aire-purple);
+  --color-aire-blue: var(--aire-blue);
+  --color-aire-pink: var(--aire-pink);
+  --color-aire-light-blue: var(--aire-light-blue);
+  --color-aire-beige: var(--aire-beige);
+  --color-aire-white: var(--aire-white);
+  --color-aire-cream: var(--aire-cream);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sora), Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para títulos usando Calistoga */
+h1, h2 {
+  font-family: var(--font-calistoga), serif;
+  font-weight: 400;
+}
+
+/* Estilos específicos para diferentes tamanhos de títulos */
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+h5 {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+h6 {
+  font-size: 1.125rem;
+  line-height: 1.5;
 }

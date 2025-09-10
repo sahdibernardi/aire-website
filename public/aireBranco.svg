@@ -1,0 +1,10 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+	<title>Novo Projeto</title>
+	<style>
+		.s0 { fill: #fafafa } 
+	</style>
+	<path id="&lt;Compound Path&gt;" fill-rule="evenodd" class="s0" d="m113.35 434h43.21l83.36 211.45h-40.15l-17.16-45.05h-96.23l-17.15 45.05h-39.23zm56.39 132.69l-35.24-92.86-35.24 92.86z"/>
+	<path id="&lt;Compound Path&gt;" fill-rule="evenodd" class="s0" d="m423.47 434v211.45h-36.46v-211.45z"/>
+	<path id="&lt;Compound Path&gt;" fill-rule="evenodd" class="s0" d="m591.71 434h92.55c39.22 0 69.25 28.8 69.25 67.11 0 32.79-22.37 57.92-53.93 64.05l20.22 29.11c7.97 11.34 18.39 16.85 30.95 16.85h7.97v34.33h-11.64c-27.89 0-48.11-11.03-61.29-34.02l-28.81-44.74h-28.8v78.76h-36.47zm36.47 34.32v66.49h55.16c18.69 0 32.79-14.4 32.79-33.4 0-19-14.1-33.09-32.79-33.09z"/>
+	<path id="&lt;Compound Path&gt;" class="s0" d="m911.33 434h137.59v34.32h-101.12v53.63h91.01v34.32h-91.01v54.85h102.66v34.33h-139.13z"/>
+</svg>

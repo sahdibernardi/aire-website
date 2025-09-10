@@ -1,0 +1,11 @@
+export { default as Header } from './Header';
+export { default as HeroSection } from './HeroSection';
+export { default as AboutSection } from './AboutSection';
+export { default as ServicesSection } from './ServicesSection';
+export { default as HomeCareSection } from './HomeCareSection';
+export { default as WhyChooseSection } from './WhyChooseSection';
+export { default as ProcessSection } from './ProcessSection';
+export { default as TestimonialsSection } from './TestimonialsSection';
+export { default as DoctorSection } from './DoctorSection';
+export { default as FinalCTASection } from './FinalCTASection';
+export { default as Footer } from './Footer';
