@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function DoctorSection() {
   return (
-    <section className="bg-aire-light-blue relative overflow-hidden flex-col justify-center items-center px-10 lg:px-6">
+    <section className="bg-aire-light-blue relative overflow-hidden flex-col justify-center items-center">
       {/* Grafismo de fundo */}
       <div className="absolute w-full h-full">
         <Image
@@ -10,11 +10,11 @@ export default function DoctorSection() {
           alt="Grafismo"
           width={2000}
           height={2000}
-          className="rotate-270"
+          className="rotate-[-90deg] object-cover"
         />
       </div>
       
-      <div className="py-12 sm:py-16 lg:py-20 flex flex-col justify-center items-center relative z-10 w-full text-aire-purple">
+      <div className="py-12 sm:py-16 px-10 lg:px-6 lg:py-20 flex flex-col justify-center items-center relative z-10 w-full text-aire-purple">
         <div className="flex flex-col lg:flex-row justify-center items-start relative z-10 w-full max-w-5xl px-2 sm:px-4 lg:px-6">
           {/* Lado esquerdo - Conteúdo de texto */}
           <div className="space-y-4 sm:space-y-6 lg:space-y-8 w-full lg:w-1/2 lg:pr-8 order-2 lg:order-1">
