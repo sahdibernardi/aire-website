@@ -102,9 +102,7 @@ export default function Header() {
           {isMobileMenuOpen ? (
             <HiX 
               size={28} 
-              className={`transition-colors ${
-                isScrolled ? "text-aire-slate" : "text-white"
-              }`}
+              className="text-aire-slate"
             />
           ) : (
             <HiMenu 
@@ -120,65 +118,41 @@ export default function Header() {
       {/* Mobile Dropdown Menu */}
       {isMobileMenuOpen && (
         <div 
-          className={`md:hidden fixed top-0 left-0 w-full h-screen transition-all duration-300 z-40 ${
-            isScrolled 
-              ? "bg-aire-white/95 backdrop-blur-sm" 
-              : "bg-black/90 backdrop-blur-sm"
-          }`}
+          className="md:hidden fixed top-0 left-0 w-full h-screen transition-all duration-300 z-40 bg-aire-white/95 backdrop-blur-sm"
         >
           <div className="pt-20">
             <nav className="flex flex-col">
               <Link 
                 href="#" 
-                className={`px-6 py-4 text-lg transition-colors font-bold ${
-                  isScrolled 
-                    ? "text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20" 
-                    : "text-white hover:text-aire-cream hover:bg-white/10"
-                }`}
+                className="px-6 py-4 text-lg transition-colors font-bold text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Início
               </Link>
               <Link 
                 href="#" 
-                className={`px-6 py-4 text-lg transition-colors font-bold ${
-                  isScrolled 
-                    ? "text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20" 
-                    : "text-white hover:text-aire-cream hover:bg-white/10"
-                }`}
+                className="px-6 py-4 text-lg transition-colors font-bold text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Sobre
               </Link>
               <Link 
                 href="#" 
-                className={`px-6 py-4 text-lg transition-colors font-bold ${
-                  isScrolled 
-                    ? "text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20" 
-                    : "text-white hover:text-aire-cream hover:bg-white/10"
-                }`}
+                className="px-6 py-4 text-lg transition-colors font-bold text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Serviços
               </Link>
               <Link 
                 href="#" 
-                className={`px-6 py-4 text-lg transition-colors font-bold ${
-                  isScrolled 
-                    ? "text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20" 
-                    : "text-white hover:text-aire-cream hover:bg-white/10"
-                }`}
+                className="px-6 py-4 text-lg transition-colors font-bold text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Atendimento
               </Link>
               <Link 
                 href="#" 
-                className={`px-6 py-4 text-lg transition-colors font-bold ${
-                  isScrolled 
-                    ? "text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20" 
-                    : "text-white hover:text-aire-cream hover:bg-white/10"
-                }`}
+                className="px-6 py-4 text-lg transition-colors font-bold text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contato

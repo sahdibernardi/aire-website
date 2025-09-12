@@ -77,16 +77,26 @@ function ServiceCard({
 
         {isExpanded && (
           <div>
-            <div className="w-full h-[200px] relative">
-              <div className="absolute inset-0 bg-white/20"></div>
+            <div className="w-full h-[300px] relative">
+              <Image
+                src={image}
+                alt={imageAlt}
+                className="w-full h-full object-cover object-[50%_35%]"
+                width={1000}
+                height={1000}
+              />
+              <div className="absolute inset-0 bg-aire-white/80"></div>
+              
+              {/* Texto sobreposto à imagem */}
+              <div className="absolute inset-0 flex flex-col justify-center items-center p-8 text-center">
+                <h3 className="text-3xl font-bold text-aire-slate mb-4 drop-shadow-lg">{title}</h3>
+                <p className="text-aire-slate leading-relaxed mb-6 drop-shadow-lg max-w-2xl">
+                  {description}
+                </p>
+              </div>
             </div>
 
             <div className="p-8">
-              <h3 className="text-2xl font-bold text-aire-slate mb-4 text-center">{title}</h3>
-              <p className="text-aire-slate leading-relaxed text-center mb-6">
-                {description}
-              </p>
-              
               {expandedContent}
 
               <div className="text-center mt-6">
@@ -121,7 +131,7 @@ export default function ServicesSection() {
       {/* Content */}
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl text-aire-purple mb-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl text-aire-purple mb-4">
             NOSSOS SERVIÇOS:
             <br />
             ENTENDA COMO
