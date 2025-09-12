@@ -14,7 +14,7 @@ export default function TestimonialsSection() {
 
       <div className="container mx-auto relative z-10 max-w-full">
         <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-          <h2 className="font-bold text-aire-white mb-4 text-lg sm:text-xl lg:text-2xl">
+          <h2 className=" text-aire-white mb-4 text-lg sm:text-xl lg:text-4xl">
             COMO AJUDAMOS
             <br />
             NOSSOS PACIENTES?

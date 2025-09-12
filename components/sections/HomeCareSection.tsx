@@ -16,7 +16,7 @@ export default function HomeCareSection() {
           />
         </div>
         <div className="text-aire-slate order-1 lg:order-2">
-          <h2 className="font-bold mb-4 sm:mb-6 text-lg sm:text-xl lg:text-2xl">ATENDIMENTO EM AMBIENTE DOMICILIAR</h2>
+          <h2 className="mb-4 sm:mb-6 text-lg sm:text-xl lg:text-4xl">ATENDIMENTO EM AMBIENTE DOMICILIAR</h2>
           <p className="text-sm sm:text-md mb-4 sm:mb-6 leading-relaxed">
             Atendemos <strong>adultos, idosos e crianças</strong> em Florianópolis e região, unindo tecnologia de ponta e uma equipe especializada para levar atendimento de excelência até a sua casa.
           </p>

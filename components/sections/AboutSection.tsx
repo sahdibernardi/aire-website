@@ -14,7 +14,7 @@ export default function AboutSection() {
           />
         </div>
         <div className="text-white order-1 lg:order-2">
-          <h2 className="font-bold mb-4 sm:mb-6 text-xl sm:text-2xl">SOBRE A AIRE</h2>
+          <h2 className="mb-4 sm:mb-6 text-xl sm:text-2xl lg:text-4xl">SOBRE A AIRE</h2>
           <h3 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6">
             Cuidamos da sua saúde respiratória e cardiovascular com ciência, tecnologia e acolhimento
           </h3>

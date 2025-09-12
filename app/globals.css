@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -16,25 +18,6 @@
   --aire-cream: #FCE9E0;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-calistoga: var(--font-calistoga);
-  --font-sora: var(--font-sora);
-  
-  /* AIRE Brand Colors */
-  --color-aire-black: var(--aire-black);
-  --color-aire-slate: var(--aire-slate);
-  --color-aire-purple: var(--aire-purple);
-  --color-aire-blue: var(--aire-blue);
-  --color-aire-pink: var(--aire-pink);
-  --color-aire-light-blue: var(--aire-light-blue);
-  --color-aire-beige: var(--aire-beige);
-  --color-aire-white: var(--aire-white);
-  --color-aire-cream: var(--aire-cream);
-}
 
 
 * {

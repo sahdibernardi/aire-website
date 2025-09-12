@@ -18,7 +18,7 @@ export default function DoctorSection() {
         <div className="flex flex-col lg:flex-row justify-center items-start relative z-10 w-full max-w-5xl px-2 sm:px-4 lg:px-6">
           {/* Lado esquerdo - Conteúdo de texto */}
           <div className="space-y-4 sm:space-y-6 lg:space-y-8 w-full lg:w-1/2 lg:pr-8 order-2 lg:order-1">
-            <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight">
+            <h2 className="text-xl sm:text-2xl lg:text-4xl xl:text-4xl leading-tight">
               Trajetória e visão que inspiram a AIRE
             </h2>
             <h3 className="text-lg sm:text-xl font-semibold">Dra. Camila Adam, Msc, PhD</h3>

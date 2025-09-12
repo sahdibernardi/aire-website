@@ -19,7 +19,7 @@ export default function FinalCTASection() {
       <div className="relative z-10">
         <div className="flex justify-center items-center h-full">
           <div className="max-w-lg text-center lg:text-left">
-            <h2 className="font-bold text-aire-purple mb-4 sm:mb-6 leading-tight text-lg sm:text-xl lg:text-2xl">
+            <h2 className=" text-aire-purple mb-4 sm:mb-6 leading-tight text-lg sm:text-xl lg:text-4xl">
               Agende sua avaliação com quem entende de saúde cardiopulmonar
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-aire-purple mb-6 sm:mb-8 leading-relaxed">

@@ -9,7 +9,7 @@ export default function WhyChooseSection() {
     <section className="py-20 px-6 bg-aire-beige">
       <div className="container mx-auto flex flex-col justify-center items-center">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-aire-purple mb-4">Por que escolher a AIRE?</h2>
+          <h2 className="text-3xl lg:text-4xl text-aire-purple mb-4">Por que escolher a AIRE?</h2>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w[600px]">
