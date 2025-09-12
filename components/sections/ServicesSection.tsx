@@ -31,29 +31,29 @@ function ServiceCard({
     <Card className="bg-white/100 border-none shadow-lg overflow-hidden backdrop-blur-sm transition-all duration-300">
       <CardContent className="p-0">
         {!isExpanded && (
-          <div className="flex items-center">
+          <div className="flex flex-col md:flex-row items-center">
             {imagePosition === 'left' && (
-              <div className="w-[241px] h-[291px] flex-shrink-0 relative">
+              <div className="w-full md:w-[241px] h-[200px] md:h-[291px] flex-shrink-0 relative order-1 md:order-1">
                 <Image
                   src={image}
                   alt={imageAlt}
-                  className="w-full h-full object-cover rounded-l-lg"
+                  className="w-full h-full object-cover rounded-t-lg md:rounded-l-lg md:rounded-t-none"
                   width={1000}
                   height={1000}
                 />
-                <div className="absolute inset-0 bg-white/20 rounded-l-lg"></div>
+                <div className="absolute inset-0 bg-white/20 rounded-t-lg md:rounded-l-lg md:rounded-t-none"></div>
               </div>
             )}
 
-            <div className="flex-1 p-8">
-              <h3 className="text-2xl sm:text-xl font-bold text-aire-slate mb-4 text-center">{title}</h3>
-              <p className="text-aire-slate leading-relaxed text-center mb-6">
+            <div className="flex-1 p-4 md:p-8 order-2">
+              <h3 className="text-xl md:text-2xl font-bold text-aire-slate mb-3 md:mb-4 text-center">{title}</h3>
+              <p className="text-sm md:text-base text-aire-slate leading-relaxed text-center mb-4 md:mb-6">
                 {description}
               </p>
               <div className="text-center">
                 <Button 
                   onClick={toggleExpanded}
-                  className="bg-aire-beige hover:bg-aire-beige/80 text-aire-slate rounded-full px-8"
+                  className="bg-aire-beige hover:bg-aire-beige/80 text-aire-slate rounded-full px-6 md:px-8 py-2 md:py-3 text-sm md:text-base min-h-[44px]"
                 >
                   saiba mais
                 </Button>
@@ -61,15 +61,15 @@ function ServiceCard({
             </div>
 
             {imagePosition === 'right' && (
-              <div className="w-[241px] h-[291px] flex-shrink-0 relative">
+              <div className="w-full md:w-[241px] h-[200px] md:h-[291px] flex-shrink-0 relative order-1 md:order-3">
                 <Image
                   src={image}
                   alt={imageAlt}
-                  className="w-full h-full object-cover rounded-r-lg"
+                  className="w-full h-full object-cover rounded-t-lg md:rounded-r-lg md:rounded-t-none"
                   width={1000}
                   height={1000}
                 />
-                <div className="absolute inset-0 bg-white/20 rounded-r-lg"></div>
+                <div className="absolute inset-0 bg-white/20 rounded-t-lg md:rounded-r-lg md:rounded-t-none"></div>
               </div>
             )}
           </div>
@@ -77,7 +77,7 @@ function ServiceCard({
 
         {isExpanded && (
           <div>
-            <div className="w-full h-[300px] relative">
+            <div className="w-full h-[260px] md:h-[300px] relative">
               <Image
                 src={image}
                 alt={imageAlt}
@@ -88,21 +88,21 @@ function ServiceCard({
               <div className="absolute inset-0 bg-aire-white/80"></div>
               
               {/* Texto sobreposto à imagem */}
-              <div className="absolute inset-0 flex flex-col justify-center items-center p-8 text-center">
-                <h3 className="text-3xl font-bold text-aire-slate mb-4 drop-shadow-lg">{title}</h3>
-                <p className="text-aire-slate leading-relaxed mb-6 drop-shadow-lg max-w-2xl">
+              <div className="absolute inset-0 flex flex-col justify-center items-center pt-10 p-6 md:p-8 text-center">
+                <h3 className="text-xl md:text-3xl font-bold text-aire-slate mb-2 md:mb-4 drop-shadow-lg">{title}</h3>
+                <p className="text-sm md:text-base text-aire-slate leading-relaxed mb-4 md:mb-6 drop-shadow-lg max-w-2xl">
                   {description}
                 </p>
               </div>
             </div>
 
-            <div className="p-8">
+            <div className="p-4 md:p-8">
               {expandedContent}
 
-              <div className="text-center mt-6">
+              <div className="text-center mt-4 md:mt-6">
                 <Button 
                   onClick={toggleExpanded}
-                  className="bg-aire-beige hover:bg-aire-beige/80 text-aire-slate rounded-full px-8 flex items-center gap-2 mx-auto"
+                  className="bg-aire-beige hover:bg-aire-beige/80 text-aire-slate rounded-full px-6 md:px-8 py-2 md:py-3 text-sm md:text-base flex items-center gap-2 mx-auto min-h-[44px]"
                 >
                   fechar <FaChevronUp size={16} />
                 </Button>
@@ -117,7 +117,7 @@ function ServiceCard({
 
 export default function ServicesSection() {
   return (
-    <section className="py-20 px-10 lg:px-6 bg-aire-light-blue relative overflow-hidden">
+    <section className="py-12 md:py-20 px-10 md:px-10 lg:px-6 bg-aire-light-blue relative overflow-hidden">
       <div className="absolute inset-0 opacity-20">
         <Image
           src="/grafismoLaranja.png"
@@ -130,8 +130,8 @@ export default function ServicesSection() {
       
       {/* Content */}
       <div className="container mx-auto relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl text-aire-purple mb-4">
+        <div className="text-center mb-8 md:mb-16">
+          <h2 className="text-2xl md:text-2xl lg:text-3xl xl:text-4xl text-aire-purple mb-4">
             NOSSOS SERVIÇOS:
             <br />
             ENTENDA COMO
@@ -140,7 +140,7 @@ export default function ServicesSection() {
           </h2>
         </div>
 
-        <div className="space-y-8 max-w-5xl mx-auto mb-40">
+        <div className="space-y-6 md:space-y-8 max-w-5xl mx-auto mb-20 md:mb-40">
           {/* Fisioterapia Cardiopulmonar */}
           <ServiceCard
             title="Fisioterapia Cardiopulmonar"
@@ -168,12 +168,12 @@ export default function ServicesSection() {
                 </p>
               </div>
               <div className="space-y-3 mt-6">
-              <details className="border-2  border-aire-slate rounded-lg">
-                <summary className="p-4 cursor-pointer rounded-lg font-medium text-aire-slate flex justify-between items-center">
+              <details className="border-2 border-aire-slate rounded-lg">
+                <summary className="p-3 md:p-4 cursor-pointer rounded-lg font-medium text-aire-slate flex justify-between items-center text-sm md:text-base min-h-[44px]">
                   Reabilitação cardíaca
                   <FaChevronDown size={16} />
                 </summary>
-                <div className="p-4 border-t">
+                <div className="p-3 md:p-4 border-t">
                   <p className="text-aire-slate mb-3">
                     A reabilitação cardíaca é <strong>indicada para pacientes que sofreram problemas
                     cardíacos ou passaram por procedimentos cardíacos</strong>, como infarto do miocárdio
@@ -194,11 +194,11 @@ export default function ServicesSection() {
               </details>
 
               <details className="border-2 border-aire-slate rounded-lg">
-                <summary className="p-4 cursor-pointer rounded-lg font-medium text-aire-slate flex justify-between items-center">
+                <summary className="p-3 md:p-4 cursor-pointer rounded-lg font-medium text-aire-slate flex justify-between items-center text-sm md:text-base min-h-[44px]">
                   Reabilitação pulmonar e fisioterapia respiratória
                   <FaChevronDown size={16} />
                 </summary>
-                <div className="p-4 border-t">
+                <div className="p-3 md:p-4 border-t">
                   <p className="text-aire-slate mb-3">
                     Indicadas para pacientes com <strong>doenças que afetam a função pulmonar e dificultam a respiração</strong>. Isso inclui pessoas com Doença Pulmonar Obstrutiva Crônica (DPOC), como enfisema e bronquite crônica, asma grave ou de difícil controle, fibrose pulmonar e outras doenças intersticiais pulmonares, bronquiectasias e pacientes com câncer de pulmão. 
                   </p>
@@ -209,11 +209,11 @@ export default function ServicesSection() {
               </details>
 
               <details className="border-2 border-aire-slate rounded-lg">
-                <summary className="p-4 cursor-pointer rounded-lg font-medium text-aire-slate flex justify-between items-center">
+                <summary className="p-3 md:p-4 cursor-pointer rounded-lg font-medium text-aire-slate flex justify-between items-center text-sm md:text-base min-h-[44px]">
                   Reabilitação autonômica
                   <FaChevronDown size={16} />
                 </summary>
-                <div className="p-4 border-t">
+                <div className="p-3 md:p-4 border-t">
                   <p className="text-aire-slate mb-3">
                     Para indivíduos com <strong>síncopes (desmaios)</strong> — especialmente causadas por disfunções autonômicas, como a <strong>síncope vasovagal</strong> ou <strong>hipotensão ortostática</strong> — com o objetivo de melhorar a regulação da pressão arterial e da frequência cardíaca, aumentando a tolerância ortostática (ficar em pé por longos períodos) e prevenindo novos episódios. 
                   </p>
@@ -221,11 +221,11 @@ export default function ServicesSection() {
               </details>
 
               <details className="border-2 border-aire-slate rounded-lg">
-                <summary className="p-4 cursor-pointer rounded-lg font-medium text-aire-slate flex justify-between items-center">
+                <summary className="p-3 md:p-4 cursor-pointer rounded-lg font-medium text-aire-slate flex justify-between items-center text-sm md:text-base min-h-[44px]">
                   Tratamento para distúrbios respiratórios do sono
                   <FaChevronDown size={16} />
                 </summary>
-                <div className="p-4 border-t">
+                <div className="p-3 md:p-4 border-t">
                   <p className="text-aire-slate mb-3">
                     Para indivíduos com <strong>alterações dos padrões de respiração que ocorrem durante o sono</strong>, resultando em pausas respiratórias, roncos, queda na oxigenação e fragmentação do sono. Os métodos mais eficazes para o tratamento de Distúrbios Respiratórios do Sono, como a Apneia do Sono, incluem o uso de dispositivos de pressão positiva.
                   </p>
@@ -236,11 +236,11 @@ export default function ServicesSection() {
               </details>
 
               <details className="border-2 border-aire-slate rounded-lg">
-                <summary className="p-4 cursor-pointer rounded-lg font-medium text-aire-slate flex justify-between items-center">
+                <summary className="p-3 md:p-4 cursor-pointer rounded-lg font-medium text-aire-slate flex justify-between items-center text-sm md:text-base min-h-[44px]">
                   Programa de exercícios físicos funcionais monitorizados para idosos
                   <FaChevronDown size={16} />
                 </summary>
-                <div className="p-4 border-t">
+                <div className="p-3 md:p-4 border-t">
                   <p className="text-aire-slate mb-3">
                     Indicado para aqueles que desejam manter ou recuperar a autonomia, prevenir quedas e melhorar sua qualidade de vida de forma segura e eficaz. 
                   </p>
