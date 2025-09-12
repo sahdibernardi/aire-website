@@ -26,7 +26,8 @@ export default function FinalCTASection() {
               Responderemos rapidamente para entender suas necessidades e indicar a abordagem mais adequada
             </p>
             <div className="text-center mt-8 sm:mt-12 flex justify-center lg:justify-start">
-              <Button className="text-sm sm:text-base lg:text-lg font-bold bg-aire-pink hover:bg-aire-purple text-white px-4 sm:px-6 py-3 flex items-center space-x-2 shadow-lg">
+              <Button className="text-sm sm:text-base lg:text-lg font-bold bg-aire-pink hover:bg-aire-purple text-white px-4 sm:px-6 py-3 flex items-center space-x-2 shadow-lg"
+              >
                 <FaWhatsapp className="h-4 w-4 sm:h-5 sm:w-5" />
                 <span>Agende sua consulta avaliativa personalizada</span>
               </Button>

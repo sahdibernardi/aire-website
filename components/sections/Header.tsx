@@ -40,7 +40,7 @@ export default function Header() {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-12">
+        <nav className="hidden md:flex items-center itens-center space-x-12 w-[70%] justify-evenly">
           <Link 
             href="#" 
             className={`transition-colors font-bold ${

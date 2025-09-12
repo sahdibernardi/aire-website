@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -7,9 +8,14 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export const Button: React.FC<ButtonProps> = ({ children, className = '', ...props }) => {
+  const handleClick = () => {
+    // redirect to onClick={() => window.open('https://wa.me/554896745248', '_blank')}
+    window.open('https://wa.me/554896745248', '_blank');
+  };
   return (
     <button
       className={`inline-flex items-center justify-center rounded-full text-md font-bold font-xl transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background ${className}`}
+      onClick={handleClick}
       {...props}
     >
       {children}
