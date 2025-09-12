@@ -21,21 +21,21 @@ export default function Header() {
 
   return (
     <header 
-      className={`w-full pt-2 px-2 fixed top-0 z-50 transition-all duration-300 ${
+      className={`w-full max-w-full pt-2 px-2 fixed top-0 z-50 transition-all duration-300 ${
         isScrolled 
           ? "bg-aire-white/95 backdrop-blur-sm" 
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between">
-        <div className="flex items-center space-x-4 h-20">
-          <Image src="/logoLung.svg" alt="AIRE Logo" width={60} height={30} />
+      <div className="container mx-auto flex items-center justify-between px-2 sm:px-4 max-w-full">
+        <div className="flex items-center space-x-2 sm:space-x-4 h-16 sm:h-20">
+          <Image src="/logoLung.svg" alt="AIRE Logo" width={40} height={20} className="sm:w-[60px] sm:h-[30px]" />
           <Image 
             src={isScrolled ? "/aireRosa.svg" : "/aireBranco.svg"} 
             alt="AIRE" 
-            width={120} 
-            height={60} 
-            className="transition-all duration-300 object-cover"
+            width={80} 
+            height={40} 
+            className="sm:w-[120px] sm:h-[60px] transition-all duration-300 object-cover"
           />
         </div>
 
@@ -95,20 +95,20 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden p-2"
+          className="md:hidden p-2 z-50"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle mobile menu"
         >
           {isMobileMenuOpen ? (
             <HiX 
-              size={24} 
+              size={28} 
               className={`transition-colors ${
                 isScrolled ? "text-aire-slate" : "text-white"
               }`}
             />
           ) : (
             <HiMenu 
-              size={24} 
+              size={28} 
               className={`transition-colors ${
                 isScrolled ? "text-aire-slate" : "text-white"
               }`}
@@ -120,69 +120,71 @@ export default function Header() {
       {/* Mobile Dropdown Menu */}
       {isMobileMenuOpen && (
         <div 
-          className={`md:hidden absolute top-full left-0 w-full transition-all duration-300 ${
+          className={`md:hidden fixed top-0 left-0 w-full h-screen transition-all duration-300 z-40 ${
             isScrolled 
               ? "bg-aire-white/95 backdrop-blur-sm" 
               : "bg-black/90 backdrop-blur-sm"
           }`}
         >
-          <nav className="flex flex-col py-4">
-            <Link 
-              href="#" 
-              className={`px-6 py-3 transition-colors font-bold ${
-                isScrolled 
-                  ? "text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20" 
-                  : "text-white hover:text-aire-cream hover:bg-white/10"
-              }`}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Início
-            </Link>
-            <Link 
-              href="#" 
-              className={`px-6 py-3 transition-colors font-bold ${
-                isScrolled 
-                  ? "text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20" 
-                  : "text-white hover:text-aire-cream hover:bg-white/10"
-              }`}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Sobre
-            </Link>
-            <Link 
-              href="#" 
-              className={`px-6 py-3 transition-colors font-bold ${
-                isScrolled 
-                  ? "text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20" 
-                  : "text-white hover:text-aire-cream hover:bg-white/10"
-              }`}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Serviços
-            </Link>
-            <Link 
-              href="#" 
-              className={`px-6 py-3 transition-colors font-bold ${
-                isScrolled 
-                  ? "text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20" 
-                  : "text-white hover:text-aire-cream hover:bg-white/10"
-              }`}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Atendimento
-            </Link>
-            <Link 
-              href="#" 
-              className={`px-6 py-3 transition-colors font-bold ${
-                isScrolled 
-                  ? "text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20" 
-                  : "text-white hover:text-aire-cream hover:bg-white/10"
-              }`}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Contato
-            </Link>
-          </nav>
+          <div className="pt-20">
+            <nav className="flex flex-col">
+              <Link 
+                href="#" 
+                className={`px-6 py-4 text-lg transition-colors font-bold ${
+                  isScrolled 
+                    ? "text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20" 
+                    : "text-white hover:text-aire-cream hover:bg-white/10"
+                }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Início
+              </Link>
+              <Link 
+                href="#" 
+                className={`px-6 py-4 text-lg transition-colors font-bold ${
+                  isScrolled 
+                    ? "text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20" 
+                    : "text-white hover:text-aire-cream hover:bg-white/10"
+                }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Sobre
+              </Link>
+              <Link 
+                href="#" 
+                className={`px-6 py-4 text-lg transition-colors font-bold ${
+                  isScrolled 
+                    ? "text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20" 
+                    : "text-white hover:text-aire-cream hover:bg-white/10"
+                }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Serviços
+              </Link>
+              <Link 
+                href="#" 
+                className={`px-6 py-4 text-lg transition-colors font-bold ${
+                  isScrolled 
+                    ? "text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20" 
+                    : "text-white hover:text-aire-cream hover:bg-white/10"
+                }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Atendimento
+              </Link>
+              <Link 
+                href="#" 
+                className={`px-6 py-4 text-lg transition-colors font-bold ${
+                  isScrolled 
+                    ? "text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20" 
+                    : "text-white hover:text-aire-cream hover:bg-white/10"
+                }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Contato
+              </Link>
+            </nav>
+          </div>
         </div>
       )}
     </header>
