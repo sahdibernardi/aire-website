@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section id="heroSection" className="min-h-screen relative flex items-center px-10 lg:px-0">
+    <section id="inicio" className="min-h-screen relative flex items-center px-10 lg:px-0">
       <div className="absolute inset-0">
         <Image
           src="/respirador.jpg"

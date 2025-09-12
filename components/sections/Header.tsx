@@ -42,7 +42,7 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center itens-center space-x-12 w-[70%] justify-evenly">
           <Link 
-            href="#heroSection" 
+            href="#inicio" 
             className={`transition-colors font-bold ${
               isScrolled 
                 ? "text-aire-slate hover:text-aire-purple" 
@@ -52,7 +52,7 @@ export default function Header() {
             Início
           </Link>
           <Link 
-            href="#aboutSection" 
+            href="#sobre" 
             className={`transition-colors font-bold ${
               isScrolled 
                 ? "text-aire-slate hover:text-aire-purple" 
@@ -62,7 +62,7 @@ export default function Header() {
             Sobre
           </Link>
           <Link 
-            href="#servicesSection" 
+            href="#servicos" 
             className={`transition-colors font-bold ${
               isScrolled 
                 ? "text-aire-slate hover:text-aire-purple" 
@@ -72,7 +72,7 @@ export default function Header() {
             Serviços
           </Link>
           <Link   
-            href="#processSection" 
+            href="#atendimento" 
             className={`transition-colors font-bold ${
               isScrolled 
                 ? "text-aire-slate hover:text-aire-purple" 
@@ -82,7 +82,7 @@ export default function Header() {
             Atendimento
           </Link>
           <Link 
-            href="#finalCTASection" 
+            href="#contato" 
             className={`transition-colors font-bold ${
               isScrolled 
                 ? "text-aire-slate hover:text-aire-purple" 
@@ -123,35 +123,35 @@ export default function Header() {
           <div className="pt-20">
             <nav className="flex flex-col">
               <Link 
-                href="#heroSection" 
+                href="#inicio" 
                 className="px-6 py-4 text-lg transition-colors font-bold text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Início
               </Link>
               <Link 
-                href="#aboutSection" 
+                href="#sobre" 
                 className="px-6 py-4 text-lg transition-colors font-bold text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Sobre
               </Link>
               <Link 
-                href="#servicesSection" 
+                href="#servicos" 
                 className="px-6 py-4 text-lg transition-colors font-bold text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Serviços
               </Link>
               <Link 
-                href="#processSection" 
+                href="#atendimento" 
                 className="px-6 py-4 text-lg transition-colors font-bold text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Atendimento
               </Link>
               <Link 
-                href="#finalCTASection" 
+                href="#contato" 
                 className="px-6 py-4 text-lg transition-colors font-bold text-aire-slate hover:text-aire-purple hover:bg-aire-cream/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
