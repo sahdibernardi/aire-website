@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function FinalCTASection() {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 px-8 lg:px-6 relative overflow-hidden min-h-[400px] sm:min-h-[500px] lg:h-[800px]">
+    <section id="finalCTASection" className="py-12 sm:py-16 lg:py-20 px-8 lg:px-6 relative overflow-hidden min-h-[400px] sm:min-h-[500px] lg:h-[800px]">
       <div className="absolute inset-0">
         <Image
           src="/contato.jpg"

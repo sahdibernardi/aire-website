@@ -117,7 +117,7 @@ function ServiceCard({
 
 export default function ServicesSection() {
   return (
-    <section className="py-12 md:py-20 px-10 md:px-10 lg:px-6 bg-aire-light-blue relative overflow-hidden">
+    <section id="servicesSection" className="py-12 md:py-20 px-10 md:px-10 lg:px-6 bg-aire-light-blue relative overflow-hidden">
       <div className="absolute inset-0 opacity-20">
         <Image
           src="/grafismoLaranja.png"

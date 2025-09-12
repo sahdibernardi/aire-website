@@ -12,7 +12,7 @@ export default function ProcessSection() {
   };
 
   return (
-    <section className="py-20 px-6 bg-aire-white relative overflow-hidden">
+    <section id="processSection" className="py-20 px-6 bg-aire-white relative overflow-hidden">
       {/* Grafismo de fundo */}
       <div className="absolute left-0 top-0 w-full h-full">
         <Image
