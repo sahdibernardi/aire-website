@@ -122,6 +122,12 @@ export const metadata: Metadata = {
     description: 'Fisioterapia cardiovascular, pulmonar e oncológica com protocolos baseados em evidência. Atendimento domiciliar especializado pela Dra. Camila Adam, PhD.',
     images: [
       {
+        url: '/logoSmall.png',
+        width: 1200,
+        height: 630,
+        alt: 'AIRE Cardiopulmonar - Fisioterapia Especializada',
+      },
+      {
         url: '/camila.jpg',
         width: 800,
         height: 600,
@@ -133,7 +139,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'AIRE Cardiopulmonar - Fisioterapia Especializada',
     description: 'Fisioterapia cardiovascular, pulmonar e oncológica com protocolos baseados em evidência. Atendimento domiciliar especializado.',
-    images: ['/camila.jpg'],
+    images: ['/logoSmall.png'],
     creator: '@airecardiopulmonar',
   },
   robots: {
@@ -152,11 +158,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
+      { url: '/logoSmall.png', type: 'image/png' },
       { url: '/logoLung.svg', type: 'image/svg+xml' },
-      { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
     ],
-    shortcut: '/favicon.ico',
-    apple: '/logoLung.svg',
+    shortcut: '/logoSmall.png',
+    apple: '/logoSmall.png',
     other: [
       {
         rel: 'mask-icon',
@@ -193,10 +199,20 @@ export default function RootLayout({
         <meta name="msapplication-tooltip" content="AIRE Cardiopulmonar - Fisioterapia Especializada" />
         <meta name="msapplication-starturl" content="/" />
         <meta name="msapplication-navbutton-color" content="#77355B" />
-        <meta name="msapplication-TileImage" content="/logoLung.svg" />
+        <meta name="msapplication-TileImage" content="/logoSmall.png" />
+        {/* Meta tags específicas para WhatsApp e redes sociais */}
+        <meta property="og:image" content="https://airecardiopulmonar.com.br/logoSmall.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:alt" content="AIRE Cardiopulmonar - Fisioterapia Especializada" />
+        <meta name="twitter:image" content="https://airecardiopulmonar.com.br/logoSmall.png" />
+        <meta name="twitter:image:alt" content="AIRE Cardiopulmonar - Fisioterapia Especializada" />
+        <link rel="icon" href="/logoSmall.png" type="image/png" />
         <link rel="icon" href="/logoLung.svg" type="image/svg+xml" />
-        <link rel="icon" href="/favicon.ico" sizes="32x32" />
-        <link rel="apple-touch-icon" href="/logoLung.svg" />
+        <link rel="shortcut icon" href="/logoSmall.png" />
+        <link rel="apple-touch-icon" href="/logoSmall.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/logoSmall.png" />
         <link rel="mask-icon" href="/logoLung.svg" color="#77355B" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
