@@ -119,27 +119,21 @@ export const metadata: Metadata = {
     url: 'https://airecardiopulmonar.com.br',
     siteName: 'AIRE Cardiopulmonar',
     title: 'AIRE Cardiopulmonar - Fisioterapia Especializada | Dra. Camila Adam',
-    description: 'Fisioterapia cardiovascular, pulmonar e oncológica com protocolos baseados em evidência. Atendimento domiciliar especializado pela Dra. Camila Adam, PhD.',
+    description: 'Fisioterapia cardiovascular, pulmonar e oncológica com protocolos baseados em ciência, tecnologia e acolhimento. Atendimento domiciliar especializado.',
     images: [
       {
-        url: '/logoSmall.png',
+        url: '/LogoSocial.png',
         width: 1200,
         height: 630,
         alt: 'AIRE Cardiopulmonar - Fisioterapia Especializada',
-      },
-      {
-        url: '/camila.jpg',
-        width: 800,
-        height: 600,
-        alt: 'Dra. Camila Adam - Fisioterapeuta PhD especializada em cardiopulmonar',
-      },
+      }
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AIRE Cardiopulmonar - Fisioterapia Especializada',
-    description: 'Fisioterapia cardiovascular, pulmonar e oncológica com protocolos baseados em evidência. Atendimento domiciliar especializado.',
-    images: ['/logoSmall.png'],
+    description: 'Fisioterapia cardiovascular, pulmonar e oncológica com protocolos baseados em ciência, tecnologia e acolhimento. Atendimento domiciliar especializado.',
+    images: ['/LogoSocial.png'],
     creator: '@airecardiopulmonar',
   },
   robots: {
@@ -155,21 +149,6 @@ export const metadata: Metadata = {
   },
   verification: {
     google: 'your-google-verification-code',
-  },
-  icons: {
-    icon: [
-      { url: '/logoSmall.png', type: 'image/png' },
-      { url: '/logoLung.svg', type: 'image/svg+xml' },
-    ],
-    shortcut: '/logoSmall.png',
-    apple: '/logoSmall.png',
-    other: [
-      {
-        rel: 'mask-icon',
-        url: '/logoLung.svg',
-        color: '#77355B',
-      },
-    ],
   },
   category: 'healthcare',
   classification: 'Fisioterapia Cardiopulmonar',
