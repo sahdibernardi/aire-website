@@ -168,6 +168,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
+        <link></link>
         <meta name="theme-color" content="#77355B" />
         <meta name="msapplication-TileColor" content="#77355B" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
