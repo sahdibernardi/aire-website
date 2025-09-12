@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function FinalCTASection() {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 px-2 sm:px-4 lg:px-6 relative overflow-hidden min-h-[400px] sm:min-h-[500px] lg:h-[800px]">
+    <section className="py-12 sm:py-16 lg:py-20 px-8 lg:px-6 relative overflow-hidden min-h-[400px] sm:min-h-[500px] lg:h-[800px]">
       <div className="absolute inset-0">
         <Image
           src="/contato.jpg"
@@ -19,7 +19,7 @@ export default function FinalCTASection() {
       <div className="relative z-10">
         <div className="flex justify-center items-center h-full">
           <div className="max-w-lg text-center lg:text-left">
-            <h2 className=" text-aire-purple mb-4 sm:mb-6 leading-tight text-lg sm:text-xl lg:text-4xl">
+            <h2 className=" text-aire-purple mb-4 sm:mb-6 leading-tight text-2xl lg:text-4xl">
               Agende sua avaliação com quem entende de saúde cardiopulmonar
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-aire-purple mb-6 sm:mb-8 leading-relaxed">

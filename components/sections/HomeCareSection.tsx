@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function HomeCareSection() {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 px-2 sm:px-4 lg:px-6 xl:px-40 bg-aire-white">
+    <section className="py-12 sm:py-16 lg:py-20 px-10 lg:px-6 xl:px-40 bg-aire-white">
       <div className="container mx-auto grid lg:grid-cols-2 gap-8 lg:gap-12 max-w-[1000px] items-center">
         <div className="relative order-2 lg:order-1">
           <Image
@@ -16,7 +16,7 @@ export default function HomeCareSection() {
           />
         </div>
         <div className="text-aire-slate order-1 lg:order-2">
-          <h2 className="mb-4 sm:mb-6 text-lg sm:text-xl lg:text-4xl">ATENDIMENTO EM AMBIENTE DOMICILIAR</h2>
+          <h2 className="mb-4 sm:mb-6 text-3xl lg:text-4xl">ATENDIMENTO EM AMBIENTE DOMICILIAR</h2>
           <p className="text-sm sm:text-md mb-4 sm:mb-6 leading-relaxed">
             Atendemos <strong>adultos, idosos e crianças</strong> em Florianópolis e região, unindo tecnologia de ponta e uma equipe especializada para levar atendimento de excelência até a sua casa.
           </p>

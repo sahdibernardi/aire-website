@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 px-2 sm:px-4 lg:px-6 xl:px-40 bg-aire-pink">
+    <section className="py-12 sm:py-16 lg:py-20 px-10 lg:px-6 xl:px-40 bg-aire-pink">
       <div className="container mx-auto grid lg:grid-cols-2 gap-8 lg:gap-12 max-w-[1000px] items-center">
         <div className="relative order-2 lg:order-1">
           <Image
@@ -14,7 +14,7 @@ export default function AboutSection() {
           />
         </div>
         <div className="text-white order-1 lg:order-2">
-          <h2 className="mb-4 sm:mb-6 text-xl sm:text-2xl lg:text-4xl">SOBRE A AIRE</h2>
+          <h2 className="mb-4 sm:mb-6 text-3xl lg:text-4xl">SOBRE A AIRE</h2>
           <h3 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6">
             Cuidamos da sua saúde respiratória e cardiovascular com ciência, tecnologia e acolhimento
           </h3>

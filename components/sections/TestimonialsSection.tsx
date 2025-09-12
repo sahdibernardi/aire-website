@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-20 px-2 sm:px-4 lg:px-6 bg-aire-pink relative overflow-hidden">
+    <section className="py-20 px-10 lg:px-6 bg-aire-pink relative overflow-hidden">
       <div className="absolute inset-0">
         <svg className="w-full h-full" viewBox="0 0 1200 800" preserveAspectRatio="none">
           <path d="M0,400 Q300,200 600,300 T1200,250 L1200,800 L0,800 Z" fill="var(--aire-pink)" opacity="0.1" />
@@ -14,7 +14,7 @@ export default function TestimonialsSection() {
 
       <div className="container mx-auto relative z-10 max-w-full">
         <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-          <h2 className=" text-aire-white mb-4 text-lg sm:text-xl lg:text-4xl">
+          <h2 className=" text-aire-white mb-4 text-3xl lg:text-4xl">
             COMO AJUDAMOS
             <br />
             NOSSOS PACIENTES?

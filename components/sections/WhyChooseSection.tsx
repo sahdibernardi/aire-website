@@ -6,7 +6,7 @@ import { ImLab } from "react-icons/im";
 
 export default function WhyChooseSection() {
   return (
-    <section className="py-20 px-6 bg-aire-beige">
+    <section className="py-20 px-10 lg:px-6 bg-aire-beige">
       <div className="container mx-auto flex flex-col justify-center items-center">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl text-aire-purple mb-4">Por que escolher a AIRE?</h2>

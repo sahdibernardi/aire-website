@@ -46,7 +46,7 @@ function ServiceCard({
             )}
 
             <div className="flex-1 p-8">
-              <h3 className="text-2xl font-bold text-aire-slate mb-4 text-center">{title}</h3>
+              <h3 className="text-2xl sm:text-xl font-bold text-aire-slate mb-4 text-center">{title}</h3>
               <p className="text-aire-slate leading-relaxed text-center mb-6">
                 {description}
               </p>
@@ -117,7 +117,7 @@ function ServiceCard({
 
 export default function ServicesSection() {
   return (
-    <section className="py-20 px-6 bg-aire-light-blue relative overflow-hidden">
+    <section className="py-20 px-10 lg:px-6 bg-aire-light-blue relative overflow-hidden">
       <div className="absolute inset-0 opacity-20">
         <Image
           src="/grafismoLaranja.png"
