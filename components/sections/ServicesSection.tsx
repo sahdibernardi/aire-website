@@ -273,11 +273,11 @@ export default function ServicesSection() {
                 <p className="text-aire-slate leading-relaxed">
                   Nossa abordagem pediátrica é especializada no atendimento de bebês e crianças,
                   utilizando técnicas lúdicas e apropriadas para cada faixa etária. Trabalhamos
-                  com conditions como bronquiolite, pneumonia, asma, fibrose cística e outras
+                  com condições como bronquiolite, pneumonia, asma, fibrose cística e outras
                   disfunções respiratórias infantis.
                 </p>
                 <p className="text-aire-slate leading-relaxed">
-                  O tratamento é realizado de forma gentil e adaptada ao desenvolvimento da criança,
+                  O tratamento é realizado de forma gentil e adaptado ao desenvolvimento da criança,
                   sempre buscando tornar a experiência o mais confortável possível para pacientes
                   e familiares.
                 </p>

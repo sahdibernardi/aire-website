@@ -9,8 +9,10 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 export const Button: React.FC<ButtonProps> = ({ children, className = '', ...props }) => {
   const handleClick = () => {
-    // redirect to onClick={() => window.open('https://wa.me/554896745248', '_blank')}
-    window.open('https://wa.me/554896745248', '_blank');
+    const phoneNumber = '554896745248';
+    const message = 'Olá, vim do Google e quero saber com funciona a consulta com a AIRE';
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   };
   return (
     <button

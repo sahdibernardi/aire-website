@@ -9,3 +9,4 @@ export { default as TestimonialsSection } from './TestimonialsSection';
 export { default as DoctorSection } from './DoctorSection';
 export { default as FinalCTASection } from './FinalCTASection';
 export { default as Footer } from './Footer';
+export { default as WhatsAppButton } from './WhatsAppButton';

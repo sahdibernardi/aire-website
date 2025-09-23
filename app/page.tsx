@@ -9,13 +9,15 @@ import {
   TestimonialsSection,
   DoctorSection,
   FinalCTASection,
-  Footer
+  Footer,
+  WhatsAppButton
 } from "@/components/sections";
 
 export default function WellnessWebsite() {
   return (
     <div className="min-h-screen bg-aire-white">
       <Header />
+      <WhatsAppButton />
       <HeroSection />
       <AboutSection />
       <ServicesSection />
